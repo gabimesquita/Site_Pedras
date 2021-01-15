@@ -1,4 +1,7 @@
-# Site_Pedras
- Site modelo "As Pedras da Natureza", com botão de voltar ao topo da página em JS.
+# Site_Pedras 💎
+
+ <p>Site modelo "As Pedras da Natureza", com botão de voltar ao topo da página em JS.</p>
  
- https://gabimesquita.github.io/Site_Pedras/
+ <p>Link para o site: https://gabimesquita.github.io/Site_Pedras/</p>
+ 
+ <img src="pedras.png">
