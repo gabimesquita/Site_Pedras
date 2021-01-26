@@ -1,4 +1,4 @@
-# As Pedras da Natureza 💎
+# Pedras da Natureza 💎
 
  <p>Site modelo de página inicial, com botões de ancoramento em HTML e de voltar ao topo JavaScript.</p>
  
