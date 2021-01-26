@@ -7,8 +7,7 @@ body{
     position: fixed;
     display: grid;
     position: relative; 
-    justify-content: center;    
-    
+    justify-content: center;       
     
 }
 
@@ -16,18 +15,15 @@ hr{
     border: 0.5px solid rgba(224, 196, 35, 0.911);
 }
 
-header{
-    
+header{    
     text-align: center;       
-    
     display: grid;
     padding: 30px 30px 30px 30px;     
     font-size: 20px;        
            
 }
 
-h1{
-    
+h1{    
     border: 1px solid rgba(224, 196, 35, 0.911);
     background: rgb(106, 189, 192);
     padding: 5px 5px 5px 5px;
@@ -120,7 +116,5 @@ div#main-content{
         flex-direction: column;
         grid-template-columns: repeat(1, 1fr);
         gap: 1rem;
-     }
-
-   
+     }   
   }
