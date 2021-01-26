@@ -4,11 +4,16 @@ body{
     margin: 50px 50px 50px 50px;   
     text-align: center;
     background: url(fundo2.jpg);
+    position: fixed;
+    display: grid;
+    position: relative; 
+    justify-content: center;    
+    
     
 }
 
 hr{
-    border: 0.5px solid rgba(224, 196, 35, 0.493);
+    border: 0.5px solid rgba(224, 196, 35, 0.911);
 }
 
 header{
@@ -17,47 +22,63 @@ header{
     box-shadow: 2px 3px 19px -2px white;
     display: grid;
     padding: 30px 30px 30px 30px;     
-    font-size: 22px;        
+    font-size: 20px;        
            
 }
 
 h1{
     
-    border: 1px solid rgb(221, 190, 15);
-    background: rgba(87, 231, 236, 0.863);
+    border: 1px solid rgba(224, 196, 35, 0.911);
+    background: rgb(106, 189, 192);
     padding: 5px 5px 5px 5px;
     animation: slidein;
     animation-duration: 1s;
-    border-radius: 80px;
+    border-radius: 10px;   
+    align-items: center;   
+    
 }
 
 div#main-content{
     line-height: 50px;
-    border: 1px solid rgb(221, 190, 15);
-    background: url(fundo.png);
+    border: 1px solid rgba(224, 196, 35, 0.911);
+    background: rgb(106, 189, 192);
     padding: 5px 5px 5px 5px;
-    border-radius: 80px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: grid;
+    text-decoration: none;
+        
 }
 
 #navMenuButton{
     text-align: center;    
     color: white;
-    border: 1px solid rgb(221, 190, 15);
+    border: 1px solid rgba(224, 196, 35, 0.911);
     display: inline-block;
     background: rgba(159, 131, 236, 0.932);
     padding: 12px 12px 12px 12px;
     animation: slidein;
     animation-duration: 5s;
-    border-radius: 50px; 
+    border-radius: 10px;     
     
 }
 
+#pedras{
+    text-decoration: none;    
+    font-family: 'Roboto Slab', serif;    
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
 #subir {
-    background-color: rgba(159, 131, 236, 0.699);
-    border-radius: 80px;
+    background-color: rgba(87, 231, 236, 0.555);
+    border-radius: 10px;
+    font-weight: bold;
     bottom: 14px;
     box-shadow: 2px 3px 19px -2px rgba(0, 0, 0, 0.75);
-    color: white;
+    color: black;
     cursor: pointer;
     height: 80px;
     position: fixed;
@@ -75,10 +96,31 @@ div#main-content{
     border: 1px solid rgb(221, 190, 15);
     margin-right: 35px;
     margin-bottom: 55px;
+    text-decoration: none;
     
+}
+
+#subir:hover{
+    scroll-behavior: smooth;
 }
 
 @keyframes slidein {
     from { opacity: 0; }
     to   { opacity: 1; }
+  }
+
+  @media (min-width: 700px) {
+    html{
+        font-size: 70%;
+    }
+
+    div#main-content{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+     }
+
+   
   }
