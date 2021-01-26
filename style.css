@@ -25,19 +25,19 @@ header{
 
 h1{    
     border: 1px solid rgba(224, 196, 35, 0.911);
-    background: rgb(106, 189, 192);
-    padding: 5px 5px 5px 5px;
+    background-image: linear-gradient(to right, rgb(123, 68, 185), rgb(81, 203, 219));
+    padding: 30px 5px 30px 5px;
     animation: slidein;
     animation-duration: 1s;
     border-radius: 10px;   
-    align-items: center;   
+    align-items: center;     
     
 }
 
 div#main-content{
     line-height: 50px;
     border: 1px solid rgba(224, 196, 35, 0.911);
-    background: rgb(106, 189, 192);
+    background: rgb(61, 158, 161);
     padding: 5px 5px 5px 5px;
     border-radius: 20px;
     text-align: center;
@@ -51,12 +51,14 @@ div#main-content{
     text-align: center;    
     color: white;
     border: 1px solid rgba(224, 196, 35, 0.911);
-    display: inline-block;
-    background: rgba(159, 131, 236, 0.932);
+    display: inline-block;        
+    justify-content: space-between;
+    margin-right: 20px;
+    background: rgb(64, 29, 161);
     padding: 12px 12px 12px 12px;
     animation: slidein;
     animation-duration: 5s;
-    border-radius: 10px;     
+    border-radius: 10px;        
     
 }
 
@@ -69,35 +71,29 @@ div#main-content{
 }
 
 #subir {
-    background-color: rgba(87, 231, 236, 0.555);
+    background-color: rgba(45, 20, 114, 0.801);
     border-radius: 10px;
-    font-weight: bold;
-    bottom: 14px;
     box-shadow: 2px 3px 19px -2px rgba(0, 0, 0, 0.75);
-    color: black;
-    cursor: pointer;
-    height: 80px;
+    color: white;
+    cursor: pointer;    
     position: fixed;
-    right: 30px;
-    width: 70px;
+    right: 0;
+    bottom: 50px;
+    height: 60px;
+    width: 30px;
     z-index: 3;    
     display: flex;
     justify-content: center;
     padding: 15px 15px 15px 15px;
     font-family: 'Roboto Slab', serif;  
-    font-size: 15pt;
+    font-size: 13pt;
     text-align: center;
     animation: slidein;
     animation-duration: 2s;
-    border: 1px solid rgb(221, 190, 15);
-    margin-right: 35px;
-    margin-bottom: 55px;
+    border: 1px solid rgb(221, 190, 15);    
     text-decoration: none;
+    align-items: center;
     
-}
-
-#subir:hover{
-    scroll-behavior: smooth;
 }
 
 @keyframes slidein {
@@ -105,16 +101,9 @@ div#main-content{
     to   { opacity: 1; }
   }
 
-  @media (min-width: 700px) {
+  @media (min-width: 800px) {
     html{
         font-size: 70%;
     }
-
-    div#main-content{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 1rem;
-     }   
+    
   }
