@@ -4,4 +4,4 @@
  
  <p>Link para o site: https://gabimesquita.github.io/Site_Pedras/</p>
  
- <img src="pedrasnatureza.png">
+ <img src="pedras.png">
