@@ -1,7 +1,8 @@
 body{
-    font-family: 'Roboto Slab', serif;    
+    font-family: 'Prompt', sans-serif;   
     font-size: 20px;
-    margin: 50px 50px 50px 50px;   
+    font-style: bold;
+    margin-top: 30px;   
     text-align: center;
     background: url(fundo2.jpg);
     position: fixed;
@@ -12,85 +13,85 @@ body{
 }
 
 hr{
-    border: 0.5px solid rgba(224, 196, 35, 0.911);
+    border: 2px solid rgba(224, 196, 35, 0.911);
 }
 
 header{    
     text-align: center;       
     display: grid;
     padding: 30px 30px 30px 30px;     
-    font-size: 20px;        
-           
-}
+    font-size: 20px; 
+    font-style: bold;
+    margin-bottom: 30px;  
+    background-color:rgba(45, 20, 114, 0.801);
+    color: white;
+    border: 4px solid rgba(224, 196, 35, 0.911);
+      
+}   
 
-h1{    
-    border: 1px solid rgba(224, 196, 35, 0.911);
-    background-image: linear-gradient(to right, rgb(123, 68, 185), rgb(81, 203, 219));
-    padding: 30px 5px 30px 5px;
+
+h1{          
     animation: slidein;
-    animation-duration: 1s;
-    border-radius: 10px;   
+    animation-duration: 1s;      
     align-items: center;     
     
 }
 
 div#main-content{
     line-height: 50px;
-    border: 1px solid rgba(224, 196, 35, 0.911);
-    background: rgb(61, 158, 161);
-    padding: 5px 5px 5px 5px;
-    border-radius: 20px;
+    border: 4px solid rgba(224, 196, 35, 0.911);
+    background-image: linear-gradient(to right, rgb(123, 68, 185), rgb(81, 203, 219));
+    padding: 15px 15px 15px 15px;   
     text-align: center;
     text-decoration: none;
-    display: grid;
-    text-decoration: none;
+    display: grid;    
         
 }
 
 #navMenuButton{
-    text-align: center;    
-    color: white;
-    border: 1px solid rgba(224, 196, 35, 0.911);
+    text-align: center;        
+    border: 4px solid rgba(224, 196, 35, 0.911);
     display: inline-block;        
-    justify-content: space-between;
-    margin-right: 20px;
-    background: rgb(64, 29, 161);
-    padding: 12px 12px 12px 12px;
+    justify-content: space-between;    
+    background: rgb(255, 255, 255);
+    padding: 10px 10px 10px 10px;
     animation: slidein;
-    animation-duration: 5s;
-    border-radius: 10px;        
+    animation-duration: 5s;   
     
+}
+
+#navMenuButton:hover{
+    background-color:rgba(243, 80, 15, 0.767);
+    cursor: pointer;
+        
 }
 
 #pedras{
     text-decoration: none;    
-    font-family: 'Roboto Slab', serif;    
-    font-size: 20px;
-    color: white;
-    cursor: pointer;
+    font-family: 'Prompt', sans-serif;   
+    font-size: 17px;    
+    font-style: bold;
+    color: black;
+    
+}
+
+
+footer{
+    margin-bottom: 50px;
+    margin-top: 50px;   
 }
 
 #subir {
-    background-color: rgba(45, 20, 114, 0.801);
-    border-radius: 10px;
+    background-color:rgba(45, 20, 114, 0.801);    
     box-shadow: 2px 3px 19px -2px rgba(0, 0, 0, 0.75);
     color: white;
-    cursor: pointer;    
-    position: fixed;
-    right: 0;
-    bottom: 50px;
-    height: 60px;
-    width: 30px;
-    z-index: 3;    
-    display: flex;
+    cursor: pointer;  
     justify-content: center;
     padding: 15px 15px 15px 15px;
-    font-family: 'Roboto Slab', serif;  
+    font-family: 'Prompt', sans-serif; 
     font-size: 13pt;
-    text-align: center;
-    animation: slidein;
-    animation-duration: 2s;
-    border: 1px solid rgb(221, 190, 15);    
+    text-align: center;   
+    border: 4px solid rgb(221, 190, 15);    
     text-decoration: none;
     align-items: center;
     
@@ -99,11 +100,13 @@ div#main-content{
 @keyframes slidein {
     from { opacity: 0; }
     to   { opacity: 1; }
-  }
+}
 
-  @media (min-width: 800px) {
+
+
+
+@media (min-width: 800px) {
     html{
-        font-size: 70%;
+        font-size: 50%;
     }
-    
-  }
+}
